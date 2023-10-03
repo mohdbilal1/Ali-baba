@@ -1,0 +1,200 @@
+.nav-list-sec {
+    margin-top: 5px;
+}
+
+.nav-list-sec a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 0 10px 20px;
+    font-size: 16px;
+}
+
+.search-area-div {
+    background-image: url('https://img.freepik.com/free-photo/business-people-casual-meeting_53876-101882.jpg?w=1060&t=st=1696063031~exp=1696063631~hmac=a7ebaded7badb73fd2832ecc71d596aab4a2535ba0aad8727c2a9dc7fec3ba29');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px;
+}
+
+.search-area-div h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.cardd-div {
+    box-shadow: 1px 1px 6px 1px white;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 270px;
+}
+.cardd-div:hover{
+    background-color: rgb(232, 124, 78);
+}
+.catgroy-div{
+    margin: 35px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid rgb(209, 203, 203);
+    cursor: pointer;
+}
+.category-img{
+    width: 60px;
+}
+
+.catgroy-div:hover{
+    border: 5px solid rgb(128, 0, 0);
+}
+
+
+.nav-list-sec{
+    position: relative;
+}
+
+.supplierHidden{
+    display: none;
+    position: absolute;
+    background: white !important;
+    z-index: 10;
+    color: black;
+    width: 1264px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    right:-267px;
+    top: 1px;
+}
+.nav-list-sec:hover .supplierHidden{
+   display: block !important;
+  
+}
+.helpHidden{
+    display: none;
+    position: absolute;
+    background: white !important;
+    z-index: 10;
+    color: black;
+    width: 1261px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    right:-163px;
+    top: 1px;  
+}
+.nav-list-sec:hover .helpHidden{
+    display: block !important;
+   
+ }
+.getAppHidden{
+    display: none;
+    position: absolute;
+    background: white !important;
+    z-index: 10;
+    color: black;
+    width: 1264px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    right:-60px;
+    top: 1px;  
+}
+.nav-list-sec:hover .getAppHidden{
+    display: block !important;
+   
+ }
+ .tradeHidden{
+    display: none;
+    position: absolute;
+    background: white !important;
+    z-index: 10;
+    color: black;
+    width: 1264px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    left: -340px;
+    top: 1px;  
+}
+.nav-list-sec:hover .tradeHidden{
+    display: block !important;
+   
+ }
+
+ .featureHidden{
+    display: none;
+    position: absolute;
+    background: white !important;
+    z-index: 10;
+    color: black;
+    width: 1264px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    left: -183px;
+    top: 1px;  
+}
+.nav-list-sec:hover .featureHidden{
+    display: block !important;
+   
+ }
+ .directfactory-div,.getsample-div,.topManufacture-div{
+    box-shadow: 1px 1px 6px 1px rgb(221, 221, 221);
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 370px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ .directfactory-div{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i3/O1CN01blSupV1NpY5ZcwvIj_!!6000000001619-2-tps-920-920.png');
+ }
+ .getsample-div{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i1/O1CN01Lcuxd21Gs6zkRBFHe_!!6000000000677-2-tps-920-920.png');
+ }
+ .topManufacture-div{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i1/O1CN01twP5Jv1tjCIiCOQAv_!!6000000005937-2-tps-920-920.png');
+ }
+ .box-bg{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i2/O1CN01of0szi1HBLd6pFTAC_!!6000000000719-0-tps-3840-1892.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+ }
+ .box-bg h1{
+    font-weight:bolder;
+    font-size: 52px;
+    padding: 100px 100px 30px 100px;
+    margin-bottom: 40px;
+ }
+ .quality-product{
+    box-shadow: 1px 1px 6px 1px rgb(221, 221, 221);
+    width: 540px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+ }
+ .box-div-bg{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i3/O1CN01FaQ37w1Zb91Cymass_!!6000000003212-0-tps-1920-456.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.review-box{
+    background-color: rgb(255, 246, 240);
+    padding:60px 0;
+}
+.mySwiper{
+    background-color: white;
+    border-radius: 20px;
+}
+.product-div{
+    background-color:rgb(236, 248, 255);
+    padding-bottom: 40px;
+}

@@ -1,0 +1,16 @@
+
+.nav-list{
+    margin-top: 5px;
+    align-items: center;
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 40px;
+    font-size:18px;
+}
+
+.logo-img-div{
+    margin-left: 40px;
+    margin-right: 200px;
+}
