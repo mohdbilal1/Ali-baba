@@ -12,6 +12,9 @@
     margin-left: 40px;
     margin-right: 20px;
 }
+.cons-elec-main-div{
+    background-color: aliceblue;
+}
 .consumer-electronics-div{
     background-image: url('https://img.freepik.com/free-photo/new-smartwatch-balancing-with-cliff_23-2150296475.jpg?size=626&ext=jpg&ga=GA1.1.1967397477.1695059684&semt=sph');
     height: 300px;
@@ -31,9 +34,9 @@
     padding-top: 4px;
     font-weight: normal;
 }
-.cardd-store{
-    transition: all ease 1s;
-}
+
 .cardd-store:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
+    opacity: 0.18s;
+    transition: all ease 1s; 
 }
