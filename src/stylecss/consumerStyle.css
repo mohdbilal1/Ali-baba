@@ -1,21 +1,24 @@
-
 .nav-list-electronic {
     align-items: center;
     margin: 0 10px;
 }
-.nav-list-electronic  a{
+
+.nav-list-electronic a {
     text-decoration: none;
     color: rgb(83, 81, 81);
 }
 
-.logo-img-div{
+.logo-img-div {
     margin-left: 40px;
     margin-right: 20px;
 }
-.cons-elec-main-div{
+
+.cons-elec-main-div,
+.head-phone-main-div {
     background-color: aliceblue;
 }
-.consumer-electronics-div{
+
+.consumer-electronics-div {
     background-image: url('https://img.freepik.com/free-photo/new-smartwatch-balancing-with-cliff_23-2150296475.jpg?size=626&ext=jpg&ga=GA1.1.1967397477.1695059684&semt=sph');
     height: 300px;
     background-repeat: no-repeat;
@@ -23,20 +26,30 @@
     background-size: cover;
     text-align: center;
 }
-.consumer-electronics-div h1{
+
+.consumer-electronics-div h1 {
     color: white;
     padding-top: 50px;
     font-weight: bolder;
     text-shadow: 1px 1px 4px blue;
 }
-.consumer-electronics-div p{
+
+.consumer-electronics-div p {
     color: white;
     padding-top: 4px;
     font-weight: normal;
 }
 
-.cardd-store:hover{
+.cardd-store:hover {
     transform: scale(1.05);
     opacity: 0.18s;
-    transition: all ease 1s; 
+    transition: all ease 1s;
+}
+#message::placeholder{
+ font-size: 12px;
+ padding: 3px 10px;
+}
+.bg-typo{
+    background-image: url('https://i.alicdn.com/img/tfs/TB19QyQH3HqK1RjSZJnXXbNLpXa-960-61.png');
+    border-radius: 20px 20px 0 0;
 }
