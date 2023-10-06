@@ -1,0 +1,46 @@
+
+.source-div,.service-div{
+    position: relative;
+}
+
+.hiddenSource,.hiddenService,.hiddenHelp{
+    display: none;
+    position: absolute;
+    background: rgb(239, 210, 210) !important;
+    z-index: 10;
+    color: black;
+    box-shadow: 0.5px 0.5px 3px rgb(206, 202, 202);
+    top: 32px;
+    border-radius: 4px;
+}
+.hiddenSource{
+    left: 18px;
+    width: 550px;
+}
+.hiddenService{
+    left: 10px;
+    padding: 10px;
+    width: 600px;
+}
+.hiddenHelp{
+    width: 300px;
+}
+.source-div:hover .hiddenSource{
+   display: block !important;
+  
+}
+
+.txt-div p{
+    margin: 4px;
+}
+
+.service-div:hover .hiddenService{
+    display: block !important;
+   
+ }
+
+ .service-div:hover .hiddenHelp{
+    display: block !important;
+   
+ }
+ 

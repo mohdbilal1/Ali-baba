@@ -34,7 +34,7 @@ const SendOrderReq = () => {
                     <a href="/">
                         <img className='logo-img img-fluid' style={{ width: '100%', height: '35px', borderRadius: '8px', objectFit: 'contain' }} src={imgeLogo} alt="logo-img" />
                     </a>
-                    <p style={{ margin: '0 20px', padding: '0 10px', borderLeft: '1px solid lightgrey', fontSize: '20px' }}>My Alibaba</p>
+                    <p style={{ margin: '0 20px', padding: '0 10px', borderLeft: '1px solid lightgrey', fontSize: '20px' }}>My Abaris</p>
                 </div>
                 <Box sx={{ position: 'absolute', right: 60 }}>
                     <List sx={{ display: 'flex', textAlign: 'center' }}>
@@ -99,7 +99,7 @@ const SendOrderReq = () => {
                         </Box>
 
                         <div>
-                            <FormControlLabel control={<Checkbox />} label="I need inspection service from Alibaba.com (after manufacturing) for this order." />
+                            <FormControlLabel control={<Checkbox />} label="I need inspection service from Abaris.com (after manufacturing) for this order." />
                             <p style={{ color: 'grey', margin: '-10px 0 0 30px', fontSize: '14px' }}>May incur additional service fees (Est. US $118-218)<ErrorOutlineOutlinedIcon /> </p>
                         </div>
                     </div>

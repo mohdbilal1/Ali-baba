@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardMedia, Checkbox, FormControlLabel, List, ListItemText, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material"
+import { Box, Button, Card, CardMedia, Checkbox, FormControlLabel, List, ListItemText, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material"
 import ConsumerElectronicsNavbar from "../Components/ConsumerElectronicsNavbar"
 import { NavLink, useNavigate } from "react-router-dom"
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
@@ -23,14 +23,34 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { AiFillInstagram } from 'react-icons/ai';
 import ImageSlider from "../Components/ImagePagingSlider";
-
+import React,{useState} from "react";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 
 const ConsumerElectronicsHeadPhones = () => {
-    const navigate=useNavigate();
-const sendOrderReq=()=>{
-    navigate('/order-request')
-}
+    const [incremState,setIncremState]=useState(0);
+    const navigate = useNavigate();
+   
+    const incrmnt=()=>{
+      setIncremState(incremState+1);
+    };
+    const decrmnt=()=>{
+      if(incremState===0){
+        setIncremState(0);
+      }else{
+        setIncremState(incremState-1);
+      }
+    };
+    const sendOrderReq = () => {
+        navigate('/order-request')
+    }
+    const onContactSupplier = () => {
+        navigate('/send-enquiry')
+    }
+
+
+
     return (
         <>
             <ConsumerElectronicsNavbar />
@@ -69,7 +89,7 @@ const sendOrderReq=()=>{
 
                 <Box sx={{ display: 'flex', bgcolor: 'white', m: '10px 30px', p: 2, border: '1px solid lightgrey', borderRadius: '10px' }}>
                     <div className="col-sm-4">
-                    <ImageSlider/>
+                        <ImageSlider />
                         <div style={{ margin: '20px 0 0 30px', display: 'flex' }}>
                             <p><FormControlLabel control={<Checkbox />} label="Add to Compare" /></p>
                             <p style={{ borderRadius: '10px', margin: '10px 0 20px 20px' }}><ShareOutlinedIcon sx={{ mr: 1, mb: 0.3, fontSize: '20px' }} />Share</p>
@@ -93,16 +113,31 @@ const sendOrderReq=()=>{
                             <img style={{ margin: '0 20px 0 62px', height: '30px', border: '1px solid lightgrey' }} src="https://s.alicdn.com/@sc04/kf/H33b6e62be3314d8db7d0775534873dc3V.jpeg_100x100xz.jpeg" alt="img" />
                             <p style={{ margin: '0 5px' }}>Blue</p>
                             <p style={{ margin: '0 47px' }}>$2.18</p>
+                            <div className="d-flex">               
+                                <button  onClick={decrmnt} className='btn'> <RemoveIcon /> </button>
+                                <TextField size="small" value={incremState} sx={{width:'40px'}} />
+                                <button onClick={incrmnt} className="btn"> <AddIcon /> </button>
+                            </div>
                         </div>
                         <div className=" d-flex mt-2">
                             <img style={{ margin: '0 20px 0 100px', height: '30px', border: '1px solid lightgrey' }} src="https://s.alicdn.com/@sc04/kf/H18cb3f45de8a40b689bf7b8ba45b5bb8p.jpeg_100x100xz.jpeg" alt="img" />
                             <p style={{ margin: '0 5px' }}>White</p>
                             <p style={{ margin: '0 40px' }}>$2.18</p>
+                            <div className="d-flex ms-1">               
+                                <button  onClick={decrmnt} className='btn'> <RemoveIcon /> </button>
+                                <TextField size="small" value={incremState} sx={{width:'40px'}} />
+                                <button onClick={incrmnt} className="btn"> <AddIcon /> </button>
+                            </div>
                         </div>
                         <div className=" d-flex mt-3">
                             <img style={{ margin: '0 20px 0 100px', height: '30px', border: '1px solid lightgrey' }} src="https://s.alicdn.com/@sc04/kf/Hc77265e3acf748b484e5ab98447e9e3dq.jpeg_100x100xz.jpeg" alt="img" />
                             <p style={{ margin: '0 5px' }}>Black</p>
                             <p style={{ margin: '0 45px' }}>$2.18</p>
+                            <div className="d-flex">               
+                                <button  onClick={decrmnt} className='btn'> <RemoveIcon /> </button>
+                                <TextField size="small" value={incremState} sx={{width:'40px'}} />
+                                <button onClick={incrmnt} className="btn"> <AddIcon /> </button>
+                            </div>
                         </div>
 
                         <div className=" d-flex mt-5 pb-4 pt-4" style={{ borderBottom: '1px solid lightgrey', borderTop: '1px solid lightgrey' }}>
@@ -175,11 +210,11 @@ const sendOrderReq=()=>{
                             <span style={{ fontSize: '14px', marginLeft: '80px' }}>To be negotiated</span><br />
                         </div>
                         <Button onClick={sendOrderReq} size="small" variant="contained" sx={{ mt: 3, borderRadius: '30px' }} fullWidth>send order request</Button>
-                        <Button size="small" sx={{ mt: 2, borderRadius: '30px', border: '1px solid rgb(15, 113, 219)', ":hover": { color: 'white', bgcolor: 'Highlight' } }} fullWidth><EmailOutlinedIcon sx={{ fontSize: '18px', mr: 1 }} />contact Supplier</Button><br />
+                        <Button onClick={onContactSupplier} size="small" sx={{ mt: 2, borderRadius: '30px', border: '1px solid rgb(15, 113, 219)', ":hover": { color: 'white', bgcolor: 'Highlight' } }} fullWidth><EmailOutlinedIcon sx={{ fontSize: '18px', mr: 1 }} />contact Supplier</Button><br />
                         <Button size="small" sx={{ mt: 2, borderRadius: '30px', border: '1px solid rgb(15, 113, 219)', ":hover": { color: 'white', bgcolor: 'Highlight' } }} fullWidth><CallOutlinedIcon sx={{ fontSize: '18px', mr: 1 }} />call us</Button>
 
                         <div style={{ border: '1px solid lightgrey', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap', padding: '10px', borderRadius: '10px', marginTop: '10px' }}>
-                            <NavLink style={{ fontWeight: 'bold', fontSize: '14px', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>Shenzhen Xiangyin Electronic Technology Co., Ltd.</NavLink>
+                            <NavLink to={'/company-page'} style={{ fontWeight: 'bold', fontSize: '14px', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>Shenzhen Xiangyin Electronic Technology Co., Ltd.</NavLink>
                             <p style={{ fontSize: '14px', color: 'grey' }}>Trading Company,Distributor/Wholesal</p>
                             <div className=" d-flex">
                                 <img style={{ height: '15px' }} src="https://u.alicdn.com/mobile/g/common/flags/1.0.0/assets/cn.png" alt="img" />
@@ -797,7 +832,7 @@ const sendOrderReq=()=>{
                                 </TabPanel>
                                 <TabPanel value={1}>
                                     <Typography className="bg-typo" sx={{ fontSize: '16px', height: '60px', color: 'white', p: '15px 30px', fontWeight: 'bold', margin: '10px 23px', borderRadius: '20px20px 0 0' }}>TRADE CAPABILITIES</Typography>
-                                    <Typography sx={{ pb: 1, fontSize: '14px', margin: '10px 43px',fontWeight:'bold' }}>Main Markets & Product(s)</Typography>
+                                    <Typography sx={{ pb: 1, fontSize: '14px', margin: '10px 43px', fontWeight: 'bold' }}>Main Markets & Product(s)</Typography>
                                     <TableContainer>
                                         <Table size="small" sx={{ width: '1000px', border: '1px solid lightgrey', ml: 3 }}>
                                             <TableBody>
@@ -852,7 +887,7 @@ const sendOrderReq=()=>{
                                             </TableBody>
                                         </Table>
                                     </TableContainer>
-                                    <Typography sx={{ fontSize: '14px',m:'10px 23px',p:'10px', border:'1px solid lightgrey'}}>View this supplier’s website</Typography>
+                                    <Typography sx={{ fontSize: '14px', m: '10px 23px', p: '10px', border: '1px solid lightgrey' }}>View this supplier’s website</Typography>
                                     <div style={{ margin: '30px 0' }}>
                                         <Typography sx={{ fontSize: '16px', margin: '0 23px', fontWeight: 'bold' }}>Send your message to this supplier</Typography>
                                         <div style={{ margin: '30px 60px' }}>
