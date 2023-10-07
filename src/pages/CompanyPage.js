@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, List, TextField } from "@mui/material"
+import { Box, Button, Checkbox, Divider, List, TextField } from "@mui/material"
 import { NavLink } from "react-router-dom"
 import imgeLogo from '../assets/mainlogo.png'
 import { VscAccount } from "react-icons/vsc";
@@ -13,6 +13,8 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const CompanyPage = () => {
     return (
@@ -606,6 +608,221 @@ const CompanyPage = () => {
                 </div>
                 <div style={{ margin: '0 0 0 30px' }}>
                     <img style={{ objectFit: 'cover' }} src="https://s.alicdn.com/@sc02/kf/Hf05e2cdb2fc64c129f53836796a9a0d5J.jpg_q80.jpg" alt="img" />
+                </div>
+            </Box>
+
+            <Box sx={{ m: '10px 30px 0 30px', borderRadius: '10px', bgcolor: 'white', border: '1px solid lightgrey' }}>
+                <div style={{ backgroundColor: 'black', padding: '20px 0 150px 0', borderRadius: '10px' }}>
+                    <h4 style={{ padding: '15px 0 0 15px', fontWeight: 'bold', color: 'white' }}>Top picks</h4>
+                    <div style={{ position: 'absolute', right: 60 }}>
+                        <Button size="small" variant="outlined" sx={{ borderRadius: '20px', margin: '-60px 0 0 0 ', color: 'white' }}>View Details <KeyboardArrowRightIcon /></Button>
+                    </div>
+                </div>
+                <div className=" d-flex flex-wrap" style={{ marginTop: '-140px' }}>
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/H2de78907f6014070914500bbb9a254dcV.jpg_250x250.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/Hada87b71b6c24b14b5c9572c453dbc2cX.png_350x350.png" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/H4a266b40d24c49a68fa9bfca69d24fbbz.jpg_350x350.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/H1d0d7919eee040d7949ae487ca585904O.jpg_220x220.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/Hf02879cd77a94afc90e91d595c926256D.jpg_220x220.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/H1eaf6f756b3e4522b78f837964ca2d47V.jpg_220x220.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/Hc0093dd05fd546b5b5de689edb4f0e636.png_220x220.png" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/He338bfe5c25048afb673090a39e8f4d99.png_220x220.png" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/H89fb94a44bc9414e95a86c1782b5730d2.jpeg_220x220.jpeg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/H2de78907f6014070914500bbb9a254dcV.jpg_250x250.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/Hada87b71b6c24b14b5c9572c453dbc2cX.png_350x350.png" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/H4a266b40d24c49a68fa9bfca69d24fbbz.jpg_350x350.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc01/kf/H2de78907f6014070914500bbb9a254dcV.jpg_250x250.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/H1d0d7919eee040d7949ae487ca585904O.jpg_220x220.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+
+
+                    <div style={{ margin: '20px', padding: '15px', width: '200px', overflow: 'hidden', border: '1px solid lightgrey' }}>
+                        <img style={{ height: '160px', width: '165px', objectFit: 'cover', borderRadius: '4px', marginBottom: '10px' }} src="https://s.alicdn.com/@sc04/kf/Hf02879cd77a94afc90e91d595c926256D.jpg_220x220.jpg" alt="img" />
+                        <p size="small" style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>B39 Wireless Headphones Portable Folding Headset MP3 Player With Microphone LED Colorful Lights BT Headset with UV</p>
+                        <p style={{ fontWeight: 'bold', margin: '3px 0', fontSize: '18px' }}>US$2.18</p>
+                        <p>1.0 piece <span style={{ fontSize: '12px', color: 'grey' }}>(Min. Order)</span></p>
+
+                    </div>
+                </div>
+
+            </Box>
+
+            <Box>
+                <h4 style={{ textAlign: 'center', margin: '20px 0' }}>COMPANY INTRODUCTION</h4>
+                <Divider sx={{ height: '1px', border: '1px solid grey', m: '0 40px' }} />
+                <div>
+                    <div className=" d-flex justify-content-center" style={{ margin: '20px 0' }}>
+                        <h6>Verification Type:</h6>
+                        <img style={{ width: '25px', height: '25px', objectFit: 'cover', margin: '0 10px' }} src="https://is.alicdn.com/tps/TB1zElEOXXXXXaKXFXXXXXXXXXX-47-47.gif" alt="img" />
+                        <p style={{ margin: '-2px 0' }}>Onsite Check</p>
+                    </div>
+                    <div className=" d-flex flex-wrap m-5">
+                        <div className=" d-flex m-4">
+                            <div>
+                                <img style={{ width: '60px', height: '60px', objectFit: 'cover' }} src="https://cdn2.iconfinder.com/data/icons/miscellaneous-144-color-shadow/128/regional_territorial_geographical_map_pointer_gps_location_route_navigation-512.png" alt="img" />
+                            </div>
+                            <div className="ms-3">
+                                <p className="mb-0">Country / Region:</p>
+                                <p>Guangdong, China</p>
+                            </div>
+
+                        </div>
+                        <div className=" d-flex m-4">
+                            <div>
+                                <img style={{ width: '60px', height: '60px', objectFit: 'cover' }} src="https://thumbs.dreamstime.com/b/icon-established-situated-established-242587547.jpg" alt="img" />
+                            </div>
+                            <div className="ms-3">
+                                <p className="mb-0">Year Established:</p>
+                                <p>2021</p>
+                            </div>
+
+                        </div>
+                        <div className=" d-flex m-4">
+                            <div>
+                                <img style={{ width: '60px', height: '60px', objectFit: 'cover' }} src="https://tse2.mm.bing.net/th?id=OIP.07HHR881ifR_1lSx0Og6SAHaH8&pid=Api&P=0&h=180" alt="img" />
+                            </div>
+                            <div className="ms-3">
+                                <p className="mb-0">Business Type:</p>
+                                <p style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>Trading Company, Distributor/Wholesaler, Business Service (Transportation, finance, travel, Ads, etc)</p>
+                            </div>
+
+                        </div>
+                        <div className=" d-flex m-4">
+                            <div>
+                                <img style={{ width: '60px', height: '60px', objectFit: 'cover', mixBlendMode: 'hard-light', borderRadius: '50%' }} src="https://tse2.mm.bing.net/th?id=OIP.GcBi7ZK-g77CoBLyPLuXdQHaIC&pid=Api&P=0&h=180" alt="img" />
+                            </div>
+                            <div className="ms-3">
+                                <p className="mb-0">Main Products:</p>
+                                <p style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>headphones,earphones,TWS,wireless headset,game headphone,</p>
+                            </div>
+
+                        </div>
+                        <div className=" d-flex m-4">
+                            <div>
+                                <img style={{ width: '60px', height: '60px', objectFit: 'cover' }} src="https://tse2.mm.bing.net/th?id=OIP.WA12lmKpz14j6SDMRLnckQAAAA&pid=Api&P=0&h=180" alt="img" />
+                            </div>
+                            <div className="ms-3">
+                                <p className="mb-0">Main Markets:</p>
+                                <p style={{ width: '170px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>North America, South America, Mid East, Eastern Europe, Southeast Asia</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Button variant="contained" size="small" sx={{ borderRadius: '20px', p: '6px 30px', ml: 2 }}><EmailOutlinedIcon sx={{ fontSize: '18px', mr: 1 }} />contact Supplier</Button>
+                        <Button variant="outlined" sx={{ borderRadius: '20px', p: '6px 30px', ml: 2 }}>Start Order</Button>
+                        <Button size="small" variant="outlined" sx={{ borderRadius: '20px', p: '6px 30px', ml: 2 }}>learn more about us <KeyboardArrowRightIcon /></Button>
+
+                    </div>
+                <Divider sx={{ height: '1px', border: '1px solid grey', m: '30px 40px' }} />
+
+                    <div style={{textAlign:'center'}}>
+                        <h5>Send message to supplier</h5>
+                        <div className=" d-flex justify-content-center mt-4">
+                            <p><label for="Message" style={{ color: 'grey', marginRight: '20px' }}>Message:</label></p>
+                            <textarea style={{resize:'none'}} id="message" name="message" rows="5" cols="70" placeholder="Enter your enquiry detail such as product details,color,size etc" />
+                        </div>
+
+                        
+                        <Button variant="contained" sx={{  p: '6px 30px',m:'20px 0 0 30px'}}>Send</Button>
+                    </div>
                 </div>
             </Box>
 

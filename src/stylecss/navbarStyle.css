@@ -14,3 +14,51 @@
     margin-left: 40px;
     margin-right: 200px;
 }
+
+.nav-list{
+     position: relative;
+ }
+.shipToHidden,.langAndCurrencyHidden,.loginHidden{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    color: black;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 27px;
+    box-shadow: 0.5px 0.5px 6px rgb(222, 160, 160);
+    
+}
+.shipToHidden{
+    margin-left: -100px;
+}
+.langAndCurrencyHidden{
+    margin-left: -147px;
+}
+.loginHidden{
+    margin-left: -177px;
+}
+.nav-list:hover .shipToHidden{
+    display: block;
+}
+.nav-list:hover .langAndCurrencyHidden{
+    display: block;
+}  
+.nav-list:hover .loginHidden{
+    display: block;
+}
+
+.signin-tabs{
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid rgb(3, 3, 159);
+    margin: 20px 15px 0 3px;
+    padding: 10px 10px 10px 6px;
+}
+.p-tag{
+    font-size: small;
+    font-weight: bold;
+    height: 20px;
+    margin: 0 20px;
+}
