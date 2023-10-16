@@ -1,0 +1,15 @@
+.bg-img{
+    background-image: url('https://img.freepik.com/free-photo/two-human-outlines-against-shuttered-office-window-sitting-opposite-each-other-negotiating_1098-19254.jpg?w=900&t=st=1696934812~exp=1696935412~hmac=f39223adae73cf593ebdbf49f8e97d166aa182d204c0bdefc90555165575b14b');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+   padding: 100px 90px;
+}
+.bg-img2{
+    background-image: url('https://img.freepik.com/free-photo/laptop-shopping-bags-online-shopping-concept_1423-189.jpg?w=900&t=st=1696936042~exp=1696936642~hmac=6ff730454079e729afbedaa761ce9710ba03ca516191d83ced2e61e6bf8710f8');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    padding: 30px 100px 20px 10px;
+    margin-top: 20px;
+}

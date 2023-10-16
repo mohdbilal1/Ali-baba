@@ -1,0 +1,29 @@
+.nav-list-buyerAc{
+    margin-top: 5px;
+    align-items: center;
+}
+.nav-list-buyerAc a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 20px;
+    font-size:18px;
+}
+.academy-bgdiv{
+    background-image:url('https://img.alicdn.com/imgextra/i4/O1CN01xa2GLD1iU7JqZAh3g_!!6000000004415-2-tps-1920-651.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 100px 0;
+}
+.crd-hovr:hover{
+    box-shadow: 1px 1px 5px grey;
+    transform: scale(1.03);
+    transition: all ease 1s;
+}
+.bgg-last{
+    background-image: url('https://img.alicdn.com/imgextra/i3/O1CN017JnapH1lzfShAZhnc_!!6000000004890-2-tps-1363-169.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 200px;
+}

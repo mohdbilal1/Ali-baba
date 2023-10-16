@@ -16,9 +16,9 @@ import { useState } from 'react';
 
 
 const Navbar = () => {
-    const [signInOpen,setSigInOpen]=useState(false);
-    
-    const onSignIn=()=>{
+    const [signInOpen, setSigInOpen] = useState(false);
+
+    const onSignIn = () => {
         setSigInOpen(true);
     }
 
@@ -114,27 +114,29 @@ const Navbar = () => {
                             <li className='nav-list'>
                                 <NavLink to='/'><PermIdentityOutlinedIcon sx={{ fontSize: '25px' }} /></NavLink>
                                 <Box className='loginHidden'>
-                                    <KeyboardArrowUpIcon sx={{ color: 'lightgrey', mt: -5, ml:'60px',bgcolor: 'white', fontSize: '36px' }} />
-                                    <div style={{height:'500px',overflow:'scroll'}}>
+                                    <KeyboardArrowUpIcon sx={{ color: 'lightgrey', mt: -5, ml: '60px', bgcolor: 'white', fontSize: '36px' }} />
+                                    <div style={{ height: '500px', overflow: 'scroll' }}>
                                         <div style={{ padding: '3px 10px 10px 10px', textAlign: 'left', margin: '-3px 10px 10px 10px', borderRadius: '2px' }}>
-                                            <h6 style={{padding:'10px 0'}}>Welcome to Abaris.com</h6>
+                                            <h6 style={{ padding: '10px 0' }}>Welcome to Abaris.com</h6>
                                             <Button variant='contained' fullWidth>Sign in</Button>
-                                            <p style={{ margin: '20px', fontSize: '14px', color: 'grey',textAlign:'center' }}>Or, continue with:</p>
-                                            <Box sx={{textAlign:'center',m:'20px 0'}}>
-                                                <TwitterIcon sx={{ marginLeft: '10px', color:'#0d47a1', fontSize: '35px' }} />
+                                            <p style={{ margin: '20px', fontSize: '14px', color: 'grey', textAlign: 'center' }}>Or, continue with:</p>
+                                            <Box sx={{ textAlign: 'center', m: '20px 0' }}>
+                                                <TwitterIcon sx={{ marginLeft: '10px', color: '#0d47a1', fontSize: '35px' }} />
                                                 <GoogleIcon sx={{ marginLeft: '40px', color: '#0F9D58', fontSize: '35px' }} />
                                                 <FacebookIcon sx={{ marginLeft: '40px', color: '#0d47a1', fontSize: '35px' }} />
                                                 <LinkedInIcon sx={{ marginLeft: '40px', color: '#0d47a1', fontSize: '35px' }} />
                                             </Box>
-                                            <p style={{ margin: '10px 0', fontSize: '14px', color: 'grey' }}>By signing in via social media, I agree to the Alibaba.com Free Membership Agreement and Privacy Policy, and to receive emails about the platform’s products and services.</p>
-                                            <Divider sx={{border:'1px solid grey',m:'10px 0'}}/>
-                                            <p>My Alibaba</p>
-                                            <p>Orders</p>
-                                            <p>Messages</p>
-                                            <p>RFQs</p>
-                                            <p>Favorites</p>
-                                            <p>Account</p>
-                                            <Divider sx={{border:'1px solid grey',m:'10px 0'}}/>
+                                            <p style={{ margin: '10px 0', fontSize: '14px', color: 'grey' }}>By signing in via social media, I agree to the Abaris.com Free Membership Agreement and Privacy Policy, and to receive emails about the platform’s products and services.</p>
+                                            <Divider sx={{ border: '1px solid grey', m: '10px 0' }} />
+                                            <div>
+                                                <NavLink style={{marginLeft:'-30px'}} to='/globalBuyerIndex'>My Abaris</NavLink><br />
+                                                <NavLink style={{marginLeft:'-30px'}} >Orders</NavLink><br />
+                                                <NavLink style={{marginLeft:'-30px'}} >Messages</NavLink><br />
+                                                <NavLink style={{marginLeft:'-30px'}} >RFQs</NavLink><br />
+                                                <NavLink style={{marginLeft:'-30px'}} >Favorites</NavLink><br />
+                                                <NavLink style={{marginLeft:'-30px'}} >Account</NavLink>
+                                            </div>
+                                            <Divider sx={{ border: '1px solid grey', m: '10px 0' }} />
                                             <p>Membership Program</p>
                                         </div>
                                     </div>
@@ -142,8 +144,8 @@ const Navbar = () => {
                             </li>
 
                             <li className='nav-list'>
-                                <Button onClick={onSignIn} variant='contained' sx={{ borderRadius: '30px', p: '6px 30px',ml:4 }}>SignUp</Button>
-                                <SigninSignUpModel signInOpen={signInOpen} setSigInOpen={setSigInOpen}/>
+                                <Button onClick={onSignIn} variant='contained' sx={{ borderRadius: '30px', p: '6px 30px', ml: 4 }}>SignUp</Button>
+                                <SigninSignUpModel signInOpen={signInOpen} setSigInOpen={setSigInOpen} />
                             </li>
                         </List>
                     </Box>

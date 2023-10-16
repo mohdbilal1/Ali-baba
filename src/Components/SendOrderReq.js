@@ -52,8 +52,6 @@ const SendOrderReq = () => {
                         <li className='nav-list'>
                             <NavLink to='/' style={{ fontSize: '14px' }} className='signInHover'><VscAccount style={{fontSize:'18px',margin:'0 8px 3px 0',color:'grey'}}/>My Account</NavLink>
                         </li>
-
-
                     </List>
                 </Box>
 

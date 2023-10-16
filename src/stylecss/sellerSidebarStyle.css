@@ -1,0 +1,17 @@
+
+
+.sidebar-content-div {
+    color: white !important;
+    padding-left: 5px;
+    overflow-y: scroll;
+    height: 88vh;
+    width: 310px;
+
+
+}
+
+.sidebar-tb-item {
+    color: white !important;
+    font-size: 14px !important;
+    margin-left: 10px;
+}

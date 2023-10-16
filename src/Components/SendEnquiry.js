@@ -63,7 +63,7 @@ const SendEnquiry = () => {
                 <Button variant="contained" sx={{borderRadius:'30px',padding:'10px 60px',m:'10px 0'}}>Send Inquiry</Button>
                 <p style={{margin:0}}><FormControlLabel control={<Checkbox />} label="Recommend matching suppliers if this supplier doesn't contact me on Message Center within 24 hours" /></p>
                 <p><FormControlLabel control={<Checkbox />} label="Agree to share Business Card with supplier." /></p>
-                <p style={{margin:'0 150px'}}>Please make sure your contact information is correct (View and Edit). Your message will be sent directly to the recipient(s) and will not be publicly displayed. Note that if the recipient is a Gold Supplier, they can view your contact information, including your registered email address. Alibaba will never distribute or sell your personal information to third parties without your express permission.</p>
+                <p style={{margin:'0 150px'}}>Please make sure your contact information is correct (View and Edit). Your message will be sent directly to the recipient(s) and will not be publicly displayed. Note that if the recipient is a Gold Supplier, they can view your contact information, including your registered email address. Abaris will never distribute or sell your personal information to third parties without your express permission.</p>
                 <Box sx={{ display: 'flex', pt: 4, borderTop: '1px solid lightgrey', mt: 3, bgcolor: 'lightgrey' }}>
                     <p style={{ fontSize: '14px', paddingLeft: '20px' }}>Copyright © 1996-2023 Abaris  InterMESH Ltd. All rights reserved.</p>
                     <p style={{ fontSize: '14px', position: 'absolute', right: 130 }}>Terms of Use - Privacy Policy - Link to Us</p>

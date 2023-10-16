@@ -23,10 +23,10 @@ const SigninSignUpModel = ({ signInOpen, setSigInOpen }) => {
                 onClose={handleClose}
                 sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
             >
-                <Box sx={{ width: '600px', height: '550px', mb: '100px', mt: '100px', bgcolor: 'white', borderRadius: '10px', position: 'relative', overflow: 'scroll' }}>
+                <Box sx={{ width: '600px', height: '550px', mb: '100px', mt: '100px',border:'5px solid white' ,bgcolor: 'white', borderRadius: '10px', position: 'relative', overflowX: 'scroll' }}>
                     <CloseIcon onClick={handleClose} sx={{ position: 'absolute', right: 10, top: 12, bgcolor: 'white' }} />
                     <div>
-                        <Tabs>
+                        <Tabs defaultValue={0}>
                             <TabsList style={{ margin: '0 30px 30px 20px', borderBottom: '1px solid lightgrey' }}>
                                 <Tab className='signin-tabs' value={0}>Sign In</Tab>
                                 <Tab className='signin-tabs' value={1}>Sign Up</Tab>

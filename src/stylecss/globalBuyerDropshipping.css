@@ -1,0 +1,104 @@
+#header {
+    position: absolute;
+    width: 250px;
+    z-index: 20;
+  }
+  #header .pro-sidebar {
+    height: 100%;
+  }
+  #header .logotext{
+    color: #000;
+    position: absolute;
+    /* right: 6px; */
+    z-index: 99;
+    cursor: pointer;
+    padding: 10px 5px 0 5px;
+    background-color: white;
+  }
+  .sidebar-content{
+    margin-top: 50px;
+  }
+  .sidebar-content .sidebar-tb{
+    color: #181818 !important;
+    font-weight:500;
+  }
+  .footr-main-div{
+    margin-top: 80px;
+  }
+  .footr-bar{
+   height: 60px;
+  }
+  .footr-bar .footr-sidebar-tb{
+    color: #181818 !important;
+    font-weight:400;
+  }
+  .sidebar-body{
+    overflow-y: scroll;
+    height: 90vh;
+    padding-bottom: 50px;
+  }
+  #header .pro-sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+  #header .pro-sidebar.collapsed {
+    width: 100px;
+    min-width: 100px;
+  }
+  #header .pro-sidebar-inner {
+    background-color: white;
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout {
+    overflow-y: hidden;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+    font-size: 20px;
+    padding: 0 20px;
+    color: #000;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul {
+    padding: 0 5px;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+    color: #000;
+    margin: 5px 0px;
+    /* font-weight: bold; */
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+    background-color: #fbf4cd;
+    color: #000;
+    border-radius: 3px;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+    color: #000;
+  }
+  .clicked {
+    background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%);
+    border-radius: 4px;
+  }
+  .unclicked {
+    background:transparent;
+  }
+  #header .logo {
+    padding: 20px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }
+
+  .dropship-tab{
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color:  #ffe172 ;
+    border: 1px solid black;
+    margin: 10px;
+  }
+  .widthMange{
+    margin-left: 140px !important;
+    z-index: -1;
+  }

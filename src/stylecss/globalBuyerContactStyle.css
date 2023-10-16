@@ -1,0 +1,20 @@
+
+.openbar{
+    position: relative;
+}
+.right-area{
+    z-index: -1;
+}
+
+.hidebar{
+    display: none;
+    position: fixed;
+    left: 110;
+    color: black;
+    top: 10px;
+    z-index: 99 ;
+}
+.openbar:hover .hidebar{
+   display: block !important;
+   z-index: 99 !important;
+}

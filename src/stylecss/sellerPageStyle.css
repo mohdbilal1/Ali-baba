@@ -1,0 +1,10 @@
+.vedio-btn-bg{
+    width: 250px;
+    height: 150px;
+    background-image: url('https://img.freepik.com/free-photo/global-communication-background-business-network-design_53876-160238.jpg?w=900&t=st=1697464932~exp=1697465532~hmac=ab8ef1b86fcecb5415ae8d51bf5c98dc67a4d6d743bdd6bc0b444bba84a7709c');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin-left: 30px;
+}

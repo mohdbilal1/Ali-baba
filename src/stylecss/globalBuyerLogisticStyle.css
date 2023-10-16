@@ -1,0 +1,19 @@
+.bg-imge{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i1/O1CN01TqTJG91VVPbeSSmIu_!!6000000002658-2-tps-2880-560.png?quality=close');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 30px 10px 20px 10px;
+}
+.tabs{
+    border: none;
+    background-color: white;
+    margin: 20px 15px 0 3px;
+    padding: 10px 15px 10px 10px;
+    border-radius: 10px 10px 0 0;
+}
+.bg-div{
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
