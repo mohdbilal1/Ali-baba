@@ -1,0 +1,18 @@
+.bg-img-login {
+    background-image: url('https://img.freepik.com/free-photo/forklift-transporting-cargo-container-industrial-warehouse-generative-ai_188544-9409.jpg?t=st=1697716714~exp=1697720314~hmac=06c7263d5dfe5924698161ffe164fa3d2d02b9834ece06de9e19439e5311cbcf&w=740');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+
+}
+
+.logoImg {
+    width: 100%;
+    height: 45px;
+    object-fit:contain;
+    margin-left: -37%;
+}

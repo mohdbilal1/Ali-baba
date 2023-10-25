@@ -116,7 +116,7 @@ const GlobalBuyerMylist = () => {
                 </div>
             </Box>
             <div>
-                <Tabs>
+                <Tabs defaultValue={0}>
                     <TabsList style={{ margin: '0 30px 30px 20px', borderBottom: '1px solid lightgrey' }}>
                         <Tab className='signin-tabs' value={0}>Product </Tab>
                         <Tab className='signin-tabs' value={1}>Supplier </Tab>

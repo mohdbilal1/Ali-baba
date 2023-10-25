@@ -112,13 +112,13 @@ const Navbar = () => {
                                 </Box>
                             </li>
                             <li className='nav-list'>
-                                <NavLink to='/'><PermIdentityOutlinedIcon sx={{ fontSize: '25px' }} /></NavLink>
+                                <NavLink onClick={onSignIn} to='/'><PermIdentityOutlinedIcon sx={{ fontSize: '25px' }} /></NavLink>
                                 <Box className='loginHidden'>
                                     <KeyboardArrowUpIcon sx={{ color: 'lightgrey', mt: -5, ml: '60px', bgcolor: 'white', fontSize: '36px' }} />
                                     <div style={{ height: '500px', overflow: 'scroll' }}>
                                         <div style={{ padding: '3px 10px 10px 10px', textAlign: 'left', margin: '-3px 10px 10px 10px', borderRadius: '2px' }}>
                                             <h6 style={{ padding: '10px 0' }}>Welcome to Abaris.com</h6>
-                                            <Button variant='contained' fullWidth>Sign in</Button>
+                                            <Button onClick={onSignIn} variant='contained' fullWidth>Sign in</Button>
                                             <p style={{ margin: '20px', fontSize: '14px', color: 'grey', textAlign: 'center' }}>Or, continue with:</p>
                                             <Box sx={{ textAlign: 'center', m: '20px 0' }}>
                                                 <TwitterIcon sx={{ marginLeft: '10px', color: '#0d47a1', fontSize: '35px' }} />
@@ -129,12 +129,12 @@ const Navbar = () => {
                                             <p style={{ margin: '10px 0', fontSize: '14px', color: 'grey' }}>By signing in via social media, I agree to the Abaris.com Free Membership Agreement and Privacy Policy, and to receive emails about the platform’s products and services.</p>
                                             <Divider sx={{ border: '1px solid grey', m: '10px 0' }} />
                                             <div>
-                                                <NavLink style={{marginLeft:'-30px'}} to='/globalBuyerIndex'>My Abaris</NavLink><br />
-                                                <NavLink style={{marginLeft:'-30px'}} >Orders</NavLink><br />
-                                                <NavLink style={{marginLeft:'-30px'}} >Messages</NavLink><br />
-                                                <NavLink style={{marginLeft:'-30px'}} >RFQs</NavLink><br />
-                                                <NavLink style={{marginLeft:'-30px'}} >Favorites</NavLink><br />
-                                                <NavLink style={{marginLeft:'-30px'}} >Account</NavLink>
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} to='/globalBuyerIndex'>My Abaris</NavLink><br />
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} to={'/order'} >Orders</NavLink><br />
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} to='/message' >Messages</NavLink><br />
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} to='/buying-lead'>RFQs</NavLink><br />
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} to='/mylist'>Favorites</NavLink><br />
+                                                <NavLink style={{margin:'10px 0 0 -30px'}} >Account</NavLink>
                                             </div>
                                             <Divider sx={{ border: '1px solid grey', m: '10px 0' }} />
                                             <p>Membership Program</p>

@@ -29,6 +29,24 @@ const HomePage = () => {
   const onConsumrElectronic=()=>{
     navigate('/consumer-electronics')
   }
+  const onSignUp=()=>{
+    navigate('/signup-page')
+  }
+  const onTradeAssurance=()=>{
+    navigate('/trade-assurance')
+  }
+  const onSafeAndEasyPayment=()=>{
+    navigate('/safe-and-easy-payment')
+  }
+  const onMoneyBckPolicy=()=>{
+    navigate('/money-back-policy')
+  }
+  const onShippingLogisticService=()=>{
+    navigate('/shipping-logistic-service')
+  }
+  const onAfterSales=()=>{
+    navigate('/after-sales')
+  }
   return (
     <>
       <Navbar />
@@ -65,31 +83,31 @@ const HomePage = () => {
               </Box>
             </li>
             <li className='nav-list-sec'>
-              <NavLink to='/'>Trade Assurance</NavLink>
+              <NavLink to='/trade-assurance'>Trade Assurance</NavLink>
               <Box className='tradeHidden p-3 m-4'>
                 <div className=" d-flex justify-content-center align-items-center">
                   <div className='text-center' style={{ width: '400px', paddingLeft: '10px' }}>
                     <img style={{ height: '50px' }} src="https://s.alicdn.com/@img/imgextra/i2/O1CN01d18R1Z1H1GuiHHzpS_!!6000000000697-55-tps-212-32.svg" alt="img" />
                     <h4 style={{ fontSize: '32px', margin: '20px 0' }}>Enjoy protection from payment to delivery</h4>
-                    <Button variant="contained" sx={{ borderRadius: '20px' }}>learn more</Button>
+                    <Button onClick={onTradeAssurance} variant="contained" sx={{ borderRadius: '20px' }}>learn more</Button>
                   </div>
                   <div className='text-center d-flex flex-wrap' style={{ padding: '10px 0 10px 10px', margin: '0 0 0 120px', width: '800px' }}>
-                    <div className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px' }}>
+                    <div onClick={onSafeAndEasyPayment} className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px',cursor:'pointer' }}>
                       <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN010KADAP2638vcOIcv4_!!6000000007605-55-tps-70-70.svg" alt="img" />
                       <p style={{ margin: '20px 0 0 10px' }}>Safe & easy payments</p>
                       <EastIcon sx={{ ml: 2, mt: 3 }} />
                     </div>
-                    <div className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px' }}>
+                    <div onClick={onMoneyBckPolicy} className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px',cursor:'pointer' }}>
                       <img src="https://s.alicdn.com/@img/imgextra/i3/O1CN01viHX2926YHrS5jYvf_!!6000000007673-55-tps-70-70.svg" alt="img" />
                       <p style={{ margin: '20px 0 0 10px' }}>Money-back policy</p>
                       <EastIcon sx={{ ml: 4, mt: 3 }} />
                     </div>
-                    <div className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px' }}>
+                    <div onClick={onShippingLogisticService}  className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px',cursor:'pointer' }}>
                       <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01Zsnn5f28yyAQPbYyz_!!6000000008002-55-tps-70-70.svg" alt="img" />
                       <p style={{ margin: '20px 0 0 10px' }}>Shipping & logistics services</p>
                       <EastIcon sx={{ ml: 2, mt: 3 }} />
                     </div>
-                    <div className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px' }}>
+                    <div onClick={onAfterSales}  className=" d-flex" style={{ backgroundColor: 'rgb(242, 249, 232)', borderRadius: '10px', margin: '20px', padding: '20px', width: '320px',cursor:'pointer' }}>
                       <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01hoxDoj1HV2eSjAU58_!!6000000000762-55-tps-70-70.svg" alt="img" />
                       <p style={{ margin: '20px 0 0 10px' }}>After-sales protections</p>
                       <EastIcon sx={{ ml: 2, mt: 3 }} />
@@ -656,7 +674,7 @@ const HomePage = () => {
         <div className=" text-center p-5">
           <h1 style={{ color: 'white', fontSize: '52px', fontWeight: 'bold', letterSpacing: 1 }}>Ready to get started?</h1>
           <p style={{ color: 'white', margin: '30px 0', fontSize: '24px' }}>Explore millions of products from trusted suppliers by signing up today!</p>
-          <Button sx={{
+          <Button onClick={onSignUp} sx={{
             mt: 2, borderRadius: '50px', bgcolor: 'orangered', color: 'white', fontWeight: 'bold'
             , p: '12px 40px', fontSize: '18px', ":hover": { bgcolor: 'orangered', color: 'white' }
           }}>Sign up</Button>

@@ -1,0 +1,36 @@
+.Shipping-bgimg-div {
+    background-image: url('https://s.alicdn.com/@img/imgextra/i1/O1CN01RrtGbY1MnQdThpd0u_!!6000000001479-0-tps-3840-800.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.Shipping-bgimg-div div {
+    padding: 60px 100px;
+    color: white;
+    font-weight: bolder;
+}
+
+.Shipping-bgimg-div div h1 {
+    margin: 30px 0;
+}
+
+.Shipping-bgimg-div div h6 {
+    letter-spacing: 1;
+    font-size: 20px;
+}
+.number-point{
+    border: 2px solid grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2px;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}

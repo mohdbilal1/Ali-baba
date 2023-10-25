@@ -215,7 +215,7 @@ const DropshippingSetting = () => {
                                         <Switch defaultChecked color="warning" />
                                         <p style={{ marginTop: '5px', fontSize: '16px', fontWeight: 'bold' }}>Automatic order cancellation</p>
                                     </div>
-                                    <p style={{ marginLeft: '7px', fontSize: '14px' }}>When your customer cancels an order in your store, and you have not paid for the order on Alibaba.com, the system will cancel it automatically.</p>
+                                    <p style={{ marginLeft: '7px', fontSize: '14px' }}>When your customer cancels an order in your store, and you have not paid for the order on Abaris.com, the system will cancel it automatically.</p>
                                     <Divider sx={{ border: '1px solid grey', margin: '30px 50px 20px 1px' }} />
 
                                     <div className='me-5 d-flex'>

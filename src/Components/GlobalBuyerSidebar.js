@@ -21,11 +21,11 @@ const GlobalBuyerSideBar = () => {
     const onOrder = () => {
         navigate('/order')
     }
-    const onPremiumServicePg = () => {
-        navigate('/premium-services')
+    const onMessage = () => {
+        navigate('/message')
     }
-    const onProfilePge = () => {
-        navigate('/profile-page')
+    const onBuyingLead = () => {
+        navigate('/buying-lead')
     }
     const onTransaction = () => {
         navigate('/transaction')
@@ -51,8 +51,8 @@ const GlobalBuyerSideBar = () => {
 
     return (
         <>
-            <Box>
-                <TableContainer sx={{ boxShadow: '0.1px 0.1px 3px grey', width: '110px' }}>
+            <Box sx={{overflowY:'scroll',height:'90vh',overflowX:'none'}}>
+                <TableContainer sx={{ boxShadow: '0.1px 0.1px 3px grey', width: '110px'}}>
                     <Table sx={{ bgcolor: '#bbdefb', width: '110px' }}>
                         <TableBody>
                             <TableRow className="sidebar" onClick={onHome} sx={{ ":hover": { cursor: 'pointer', bgcolor: '#f57f17' } }}>
@@ -64,7 +64,7 @@ const GlobalBuyerSideBar = () => {
                                     </div>
                                 </TableCell>
                             </TableRow>
-                            <TableRow onClick={onPremiumServicePg} sx={{ ":hover": { cursor: 'pointer', bgcolor: '#f57f17' } }}>
+                            <TableRow onClick={onMessage} sx={{ ":hover": { cursor: 'pointer', bgcolor: '#f57f17' } }}>
                                 <TableCell sx={{ p: '3px 0', textAlign: 'center' }}>
                                     <MessageOutlinedIcon sx={{ fontSize: '30px' }} />
                                     <div style={{ fontSize: '13px' }}>
@@ -73,7 +73,7 @@ const GlobalBuyerSideBar = () => {
                                     </div>
                                 </TableCell>
                             </TableRow>
-                            <TableRow onClick={onProfilePge} sx={{ ":hover": { cursor: 'pointer', bgcolor: '#f57f17' } }}>
+                            <TableRow onClick={onBuyingLead} sx={{ ":hover": { cursor: 'pointer', bgcolor: '#f57f17' } }}>
                                 <TableCell sx={{ p: '3px 0', textAlign: 'center' }}>
                                     <PlaylistAddIcon sx={{ fontSize: '30px' }} />
                                     <div style={{ fontSize: '13px' }}>

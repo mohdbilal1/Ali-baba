@@ -1,0 +1,78 @@
+.videotutorials-bgimg-div {
+    background-image: url('https://s.alicdn.com/@img/imgextra/i1/O1CN01bjgc9M1wOXH7H5HzO_!!6000000006298-0-tps-3840-800.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.videotutorials-bgimg-div div {
+    padding: 60px 100px;
+    color: white;
+    font-weight: bolder;
+}
+
+.videotutorials-bgimg-div div h1 {
+    margin: 30px 0;
+}
+
+.videotutorials-bgimg-div div h6 {
+    letter-spacing: 1;
+    font-size: 20px;
+}
+.number-point{
+    border: 2px solid grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2px;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bgimg-video{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i2/O1CN01V0AG5W1wJxJhhJmv5_!!6000000006288-0-tps-2400-980.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   width: 100%;
+   height: 450px;
+}
+.bgb-img-div-1{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i2/O1CN0158ku9Q1WbCDgBc433_!!6000000002806-0-tps-910-512.jpg');
+}
+.bgb-img-div-2{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i2/O1CN01UaYksE1MQzEN4rLmp_!!6000000001430-0-tps-910-512.jpg');
+}
+.bgb-img-div-3{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i3/O1CN01cf2qxY1VNcrpEYjDF_!!6000000002641-0-tps-910-512.jpg');
+}
+.bgb-img-div-1,.bgb-img-div-2,.bgb-img-div-3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   width: 350px;
+   height: 200px;
+}
+.moneybg-img-div-1{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i4/O1CN01vjwdQZ2191wxhLvxD_!!6000000006941-0-tps-910-512.jpg');
+}
+.moneybg-img-div-2{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i3/O1CN01VJsdz91spJykp3jwT_!!6000000005815-0-tps-910-512.jpg');
+}
+.moneybg-img-div-3{
+    background-image: url('https://s.alicdn.com/@img/imgextra/i4/O1CN01zW5f5u1HbSCbJx0tw_!!6000000000776-0-tps-910-512.jpg');
+}
+
+.moneybg-img-div-1,.moneybg-img-div-2,.moneybg-img-div-3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   width: 350px;
+   height: 200px;
+}
