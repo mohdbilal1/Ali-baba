@@ -16,7 +16,7 @@ const SignUpPage = () => {
                 </NavLink>
             </div>
             <Box sx={{ display: 'flex', justifyContent: 'center',mt:5 }}>
-                <Box style={{ padding: "10px", width: '550px', padding:'20px 0',border: '1px solid lightgrey',borderRadius:'10px',boxShadow:'1px 1px 4px lightgrey' }}>
+                <Box style={{ width: '550px', padding:'20px 0',border: '1px solid lightgrey',borderRadius:'10px',boxShadow:'1px 1px 4px lightgrey' }}>
 
                     <div className=' d-flex mt-3'>
                         <p style={{ fontSize: '16px', color: 'grey', margin: '0 15px 0 50px' }}>Country/region:</p>
